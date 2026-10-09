@@ -20,6 +20,14 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    # التحقق من وجود ملف gradlew أو إنشائه تلقائياً
+    - name: Setup Gradle Wrapper
+      run: |
+        if [ ! -f "gradlew" ]; then
+          echo "gradlew not found, generating wrapper..."
+          gradle wrapper
+        fi
+
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
