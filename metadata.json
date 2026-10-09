@@ -1,0 +1,6 @@
+{
+  "name": "Family Assistant - Android Offline Utility & Code Studio",
+  "description": "Offline-first Android architecture, complete Room DB implementation, Gradle build scripts, and interactive mobile preview for Family Assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
