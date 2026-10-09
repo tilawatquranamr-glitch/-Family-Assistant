@@ -19,7 +19,8 @@ jobs:
       - uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: 8.7
-      - run: npm install
+      - run: npm install --legacy-peer-deps
+      - run: npm install @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6 --legacy-peer-deps
       - run: npm run build
       - run: npx cap add android
       - run: npx cap sync android
